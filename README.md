@@ -14,39 +14,42 @@ This project was designed for my Tennis coach who came to me with data managemen
 
 <h2>Environment Used</h2>
 
-- <b>AWS via Mac</b> (21H2)
+- <b>AWS via Mac</b>
 
-<h2>Program walk-through:</h2>
+<h2>Project walk-through:</h2>
 
 <p align="center"
 I started by creating an IAM user for the client (my coach) and gave them admin.: <br/>
-<img src="[imghttps://imagekit.io/tools/asset-public-link?detail=%7B%22name%22%3A%22Screenshot%202025-03-26%20at%2010.06.56%E2%80%AFPM.png%22%2C%22type%22%3A%22image%2Fpng%22%2C%22signedurl_expire%22%3A%222028-04-04T03%3A22%3A25.567Z%22%2C%22signedUrl%22%3A%22https%3A%2F%2Fmedia-hosting.imagekit.io%2F0f0a21a73b554792%2FScreenshot%25202025-03-26%2520at%252010.06.56%25E2%2580%25AFPM.png%3FExpires%3D1838431346%26Key-Pair-Id%3DK2ZIVPTIP2VGHC%26Signature%3Den4ICyezdDQ3c9vOQVIYIh2TON09dvb2S3ondQNjaEEjHad~AR2lxPewJDZ3XRxYjeI~7jt5GzU61bXC0fIVC6zkdX7XWKpm8eacv973Ij094r6f5FIBA0WvQTe~-kdxNepK5DaHwNQnP7O6yCRp59-6cwgQEPYmEuloWSuvW9OepdZSXW99-aKpyP9J1ZoX5JNhYC9XJYx09q1XC2u2rHee8h1~rDULnQzspv2SNNXclxfMjSePWWOcBsI1ynrKD7K-t1KTr1UUpxDmkPgsw~MQI45Pcq6hjbtOLhikC721JhVNz5lH3O09zs2GF6dmLEkhBIGtNCis1NURuO2aDQ__%22%7D[/img]" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/f607c0b2-b536-4337-97d7-59842842aceb" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+I created an S3 bucket via CLI and added the data with club-member information:  <br/>
+<img src="https://github.com/user-attachments/assets/9fc9b58a-5a33-414e-9b01-9dc1139d9b8f" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/d9e3de1d-5fce-4657-9887-7463eeee0759" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Then, I created a Table in DynamoDB to manage the data. I chose DynamoDB for its fast performance and full management services:  <br/>
+<img src="https://github.com/user-attachments/assets/8d8d92be-b6cb-48f1-9a25-1ff3ebdd7a04"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Next, I used Lambda Function to update the events mailing list based on updates to player interest using Python Programming. I would go on to program lambda to update event attendance regularly as well. The test I perfomed confired that the database is updated to reflect new event interests when new data is collected:  <br/>
+<img src="https://github.com/user-attachments/assets/a180e13d-609e-485d-805a-e521bd34fd94"/>
+<br />
+
+Here is the Python Code I used to automate the database to update player interests. I would sync this to their profile based on the kinds of events they attend at the clubhouse: 
+<br />
+<img src="https://github.com/user-attachments/assets/1a2e8c37-3ef8-41dc-bc91-63d83bfa1698" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Lastly I performed a final test to confrim that the document from my s3 file containing the data loads into my database. This ensures that the information stored in my bucket is sent directly to the NoSQL database to be managed autonomously.:  <br/>
+<img src="https://github.com/user-attachments/assets/d18f0d9d-451e-433e-87a3-490e45fba0f2" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
+# Conclusions:
+
+In this project, I organized my coach's existing data to be be stored directly into an S3 Bucket, The data is managed by DynamoDB consistently and a Lambda function was implimented to update club-member event interests. This program allows my coach to better construct mailing list for events depending on client interests. Furthermore, the autonomous function can continually update the database to add new members, update skill level and rmeove unactive members.
 <!--
  ```diff
 - text in red
