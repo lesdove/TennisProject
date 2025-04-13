@@ -47,7 +47,7 @@ Here is the Python Code I used to automate the database to update player interes
 <img src="https://github.com/user-attachments/assets/1a2e8c37-3ef8-41dc-bc91-63d83bfa1698" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Lastly I performed a final test to confrim that the document from my s3 file containing the data loads into my database. This ensures that the information stored in my bucket is sent directly to the NoSQL database to be managed autonomously.:  <br/>
+Lastly I performed a final test to confirm that the document from my s3 file containing the data loads into my database. This ensures that the information stored in my bucket is sent directly to the NoSQL database to be managed autonomously.:  <br/>
 <img src="https://github.com/user-attachments/assets/d18f0d9d-451e-433e-87a3-490e45fba0f2" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
