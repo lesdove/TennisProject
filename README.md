@@ -4,7 +4,7 @@ I volunteered to take on the task of cleaning up my Tennis Coach's Club database
 <h1>Tennis Club Database</h1>
 
 <h2>Description</h2>
-This project was designed for my Tennis coach who came to me with data management struggles. Her data is incomplete and she wants to update her emailing lists with separate skill levels and more customer metrics, marketing with merch partners, and better event targetting for clients at various skill levels. <br />
+This project was designed for my Tennis coach who came to me with data management struggles. Her data is incomplete and unstructured she wants to update her emailing lists with separate skill levels and more customer metrics, marketing with merch partners, and better event targetting for clients at various skill levels. <br />
 
 
 <h2>Languages and Utilities Used</h2>
