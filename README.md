@@ -38,7 +38,7 @@ Then, I created a Table in DynamoDB to manage the data. I chose DynamoDB for its
 <img src="https://github.com/user-attachments/assets/8d8d92be-b6cb-48f1-9a25-1ff3ebdd7a04"/>
 <br />
 <br />
-Next, I used Lambda Function to update the events mailing list based on updates to player interest using Python Programming. I would go on to program lambda to update event attendance regularly as well. The test I perfomed confired that the database is updated to reflect new event interests when new data is collected:  <br/>
+Next, I used Lambda Function to update the events mailing list based on updates to player interest using Python Programming. Interest is listed under the item "Prod_Pref_Num" and would be updated with each event type a club member attends such as raquet demos, apparel sale, beginner mixer, or advanced liveball tournament. I would go on to program lambda to update event attendance regularly as well. The test I perfomed confired that the database is updated to reflect new event interests when new data is collected:  <br/>
 <img src="https://github.com/user-attachments/assets/a180e13d-609e-485d-805a-e521bd34fd94"/>
 <br />
 
